@@ -1,0 +1,80 @@
+
+#block1,
+#block2 {
+    display: grid;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+
+#namae,
+#imgUpload,
+#imgButton,
+#save,
+#clear,
+#date,
+#hyouka {
+    margin: 10px;
+}
+
+#wrap {
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+p {
+    width: 350px;
+    text-align: center;
+}
+
+#list {
+    width: 90%;
+    margin: 50px auto;
+    list-style: none;
+}
+
+#list li {
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px darkgray;
+    text-align: center;
+}
+
+#list li p {
+    margin: 10px 0;
+}
+
+ul#list li:nth-child(even) {
+    background: rgb(249, 222, 226);
+}
+
+ul#list li:nth-child(odd) {
+    background: aliceblue;
+}
+
+ul#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+#list {
+    width: 50%;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+#block3 {
+    margin: 20px;
+    text-align: center;
+}

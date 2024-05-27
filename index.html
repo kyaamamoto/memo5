@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひと図鑑アプリ</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="block1">
+    <h1 id="title">ひと図鑑</h1>
+    <h2>＜使い方＞</h2>
+    <p>
+        このアプリは、人生を豊かに生きていくための道具の一つで、人生で出会う人の情報を記録するためのアプリです。<br>
+        街で出会った人や取引先を記録したり、推し活に活用するとか使い方はさまざま。<br>
+        あなたオリジナルのひと図鑑を完成し、充実した人生を過ごしましょう！
+    </p>
+</div>
+
+    <div id="block2">
+        日付 <input type="date" id="date">
+        名前<input type="text" id="namae">
+        評価 <select name="hyouka" id="hyouka">
+            <option value="選択">選択してください</option>
+            <option value="★★★★★">★★★★★</option>
+            <option value="★★★★☆">★★★★☆</option>
+            <option value="★★★☆☆">★★★☆☆</option>
+            <option value="★★☆☆☆">★★☆☆☆</option>
+            <option value="★☆☆☆☆">★☆☆☆☆</option>
+        </select>
+        メモ <textarea name="tokucho" id="tokucho" cols="30" rows="2"></textarea>
+        画像<input type="file" name="file" id="imgUpload">
+        <img id="uploaded" src="" alt="" width="200" height="auto">
+        <div id="preview"></div>
+    
+        <div id="block3">
+            <button id="save">保存</button>
+            <button id="clear">全削除</button>
+        </div>
+    </div>
+
+    <ul id="list">
+        <!-- ここにデータが挿入される -->
+    </ul>
+
+
+</div>
+
+    <script src="./js/main.js"></script>
+</html>
